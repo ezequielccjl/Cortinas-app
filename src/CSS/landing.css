@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+
+.landing-page{
+    height: 80vh;
+    background-image: url("https://www.colourplus.co.nz/assets/homepage/_homepageSlider/Website-blinds-2.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+
+.titulo-landing{
+    font-family: "Abril Fatface";
+    font-size: 5rem;
+    padding: 2rem;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.3);
+}

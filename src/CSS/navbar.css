@@ -1,0 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+
+.navbar{
+    height: 10vh;
+    background-color: rgb(0, 0, 0);
+    font-family: "Abril Fatface", sans;
+    color: white;
+    font-size: 2rem;
+    padding-left: 2rem;
+}
