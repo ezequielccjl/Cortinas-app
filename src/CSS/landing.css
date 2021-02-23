@@ -2,7 +2,8 @@
 
 .landing-page{
     height: 80vh;
-    background-image: url("https://www.colourplus.co.nz/assets/homepage/_homepageSlider/Website-blinds-2.jpg");
+    padding-top: 5rem;
+    background-image: url("../imgs/sunscreen1.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
@@ -14,8 +15,24 @@
 
 .titulo-landing{
     font-family: "Abril Fatface";
-    font-size: 5rem;
+    font-size: 10vh;
     padding: 2rem;
     color: white;
     background-color: rgba(0, 0, 0, 0.3);
+}
+
+@media (max-width: 600px) {
+    .titulo-landing{
+        font-size: 6vh;
+    }
+
+    .landing-page{
+        padding-top: 5rem;
+        height: 60vh;
+        background-position: top top;
+    }
+}
+
+@media (max-width: 1030px){
+
 }
