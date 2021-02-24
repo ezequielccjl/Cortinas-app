@@ -4,14 +4,17 @@
 
 .navbar{
     position: fixed;
+    top: 0;
+    z-index: 10;
     width: 100%;
     background-color: rgb(0, 0, 0);
     font-family: "Abril Fatface", sans;
     color: white;
-    font-size: 2rem;
+    font-size: 1.2rem;
     padding: 0;
     display: flex;
     flex-direction: column;
+
 }
 
 .nav-menu{
@@ -30,6 +33,14 @@
     margin: 0;
     padding: 0;
     list-style-type: none;
+}
+
+.scroll-nav{
+    transition: .5s ease;
+}
+
+.scroll-nav{
+    font-size: 2rem !important;
 }
 
 /*Animacion OPS Navbar*/

@@ -4,7 +4,6 @@
 
 .landing-page{
     height: 80vh;
-    padding-top: 5rem;
     background-image: url("../imgs/rollershades.jpg");
     background-size: cover;
     background-repeat: no-repeat;
@@ -25,33 +24,50 @@
 
 @media (max-width: 600px) {
     .titulo-landing{
-        font-size: 6vh;
+        font-size: 5vh;
+        padding: 1rem;
+    }
+
+
+    .section-landing{
+        margin-top: 4.5rem ;
     }
 
     .landing-page{
-        padding-top: 5rem;
-        height: 60vh;
-        background-position: top top;
+        height: 30vh;
+        background-position: center center;
+    }
+
+    .item-landing{
+        margin-bottom: 2rem;
     }
 }
 
 .section-ejemplos{
     padding-top: 5rem;
     padding-bottom: 5rem;
+    padding-right: 0 !important;
+    padding-left: 0 !important;
     background: linear-gradient(90deg, rgba(0,23,23,1) 0%, rgba(0,51,51,1) 50%, rgba(0,23,23,1) 100%);
 }
 
 .section-ejemplos img{
-    width: 15rem;
+    width: 12rem;
 }
 
 .item-landing{
     color: white;
     font-family: "Abril Fatface";
     font-size: 1.3rem;
+    padding:0 !important;
 }
 
 .item-landing div:last-child{
     margin-top: 0.5rem;
     font-family: "Roboto", sans-serif;
+}
+
+.section-landing .row{
+    margin-right: 0;
+    margin-left: 0;
 }

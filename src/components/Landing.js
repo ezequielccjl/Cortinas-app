@@ -12,12 +12,10 @@ export const Landing = () => {
 
 //.titulo-landing
 
-    useEffect(()=>{
-        console.log($(".titulo-landing"))
-    }, [])
+    
 
     return (
-        <React.Fragment>
+        <div className="section-landing">
             <header className="landing-page">
                 <div className="titulo-landing">CORTINAS . YA</div>
             </header>
@@ -39,7 +37,7 @@ export const Landing = () => {
                     <div>Oscuridad Total</div>
                 </div>
             </section>
-        </React.Fragment>
+        </div>
 
     )
 }
