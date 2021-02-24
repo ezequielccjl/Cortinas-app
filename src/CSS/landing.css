@@ -1,9 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
 
 .landing-page{
     height: 80vh;
     padding-top: 5rem;
-    background-image: url("../imgs/sunscreen1.jpg");
+    background-image: url("../imgs/rollershades.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
@@ -33,6 +35,23 @@
     }
 }
 
-@media (max-width: 1030px){
+.section-ejemplos{
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    background: linear-gradient(90deg, rgba(0,23,23,1) 0%, rgba(0,51,51,1) 50%, rgba(0,23,23,1) 100%);
+}
 
+.section-ejemplos img{
+    width: 15rem;
+}
+
+.item-landing{
+    color: white;
+    font-family: "Abril Fatface";
+    font-size: 1.3rem;
+}
+
+.item-landing div:last-child{
+    margin-top: 0.5rem;
+    font-family: "Roboto", sans-serif;
 }
