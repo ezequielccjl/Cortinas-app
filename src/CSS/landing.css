@@ -10,16 +10,26 @@
     background-position: center center;
     
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center
+}
+
+.cont-titulos{
+    padding: 2rem;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.3);
 }
 
 .titulo-landing{
     font-family: "Abril Fatface";
     font-size: 10vh;
-    padding: 2rem;
     color: white;
-    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.subtitulo-landing{
+    font-family: 'Roboto', sans;
+    font-size: 3vh;
 }
 
 @media (max-width: 600px) {
@@ -30,7 +40,7 @@
 
 
     .section-landing{
-        margin-top: 4.5rem ;
+        margin-top: 3.7rem ;
     }
 
     .landing-page{

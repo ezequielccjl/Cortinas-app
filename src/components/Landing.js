@@ -17,7 +17,10 @@ export const Landing = () => {
     return (
         <div className="section-landing">
             <header className="landing-page">
-                <div className="titulo-landing">CORTINAS . YA</div>
+                <div className="cont-titulos">
+                    <div className="titulo-landing">CORTINAS . YA</div>
+                    <div className="subtitulo-landing">Fábrica de cortinas roller y black out.</div>
+                </div>
             </header>
 
             <section className="section-ejemplos row">
