@@ -18,10 +18,11 @@
 .cont-titulos{
     padding: 2rem;
     color: white;
-    background-color: rgba(0, 0, 0, 0.3);
+    background-color: rgba(92, 92, 92, 0.3);
 }
 
 .titulo-landing{
+    margin-left: 1rem;
     font-family: "Abril Fatface";
     font-size: 10vh;
     color: white;
@@ -29,15 +30,32 @@
 
 .subtitulo-landing{
     font-family: 'Roboto', sans;
-    font-size: 3vh;
+    font-size: 1.5rem;
+}
+
+.cont-logo-titulo{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.cont-logo-titulo img{
+    width: 10rem;
+}
+
+@media (max-width: 700px){
+    .cont-logo-titulo{
+        flex-direction: column;
+    }
 }
 
 @media (max-width: 600px) {
     .titulo-landing{
         font-size: 5vh;
         padding: 1rem;
+        margin-left: 0;
     }
-
 
     .section-landing{
         margin-top: 3.7rem ;
@@ -48,9 +66,36 @@
         background-position: center center;
     }
 
+    .cont-logo-titulo{
+        flex-direction: row;
+    }
+
     .item-landing{
         margin-bottom: 2rem;
     }
+
+    .cont-logo-titulo img{
+        width: 4.5rem;
+    }
+
+    .subtitulo-landing{
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 400px){
+    .cont-logo-titulo{
+        flex-direction: column;
+    }
+
+    .cont-titulos{
+        padding: 1rem;
+    }
+
+    .titulo-landing{
+        padding: 0.4rem;
+    }
+
 }
 
 .section-ejemplos{
@@ -81,3 +126,4 @@
     margin-right: 0;
     margin-left: 0;
 }
+

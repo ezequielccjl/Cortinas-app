@@ -8,6 +8,9 @@ import translucida from '../imgs/translucida.png'
 import transparente from '../imgs/transparente.png'
 import blackout from '../imgs/blackout.png'
 
+//Logo
+import logo from '../icons/logo-cortinas.png'
+
 export const Landing = () => {
 
 //.titulo-landing
@@ -18,7 +21,11 @@ export const Landing = () => {
         <div className="section-landing">
             <header className="landing-page">
                 <div className="cont-titulos">
-                    <div className="titulo-landing">CORTINAS . YA</div>
+                    <div className="cont-logo-titulo">
+                        <img src={logo} alt="logo"></img>
+                        <div className="titulo-landing">CORTINAS . YA</div>
+
+                    </div>
                     <div className="subtitulo-landing">Fábrica de cortinas roller y black out.</div>
                 </div>
             </header>
