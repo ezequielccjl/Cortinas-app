@@ -53,7 +53,6 @@
 }
 
 .necesitas span:last-child{
-    margin-left: 1rem;
     color: rgb(255, 255, 255);
     font-weight: 300;
     font-style: italic;
@@ -136,6 +135,14 @@
     .desc_tel{
         font-size: 1.3rem;
     }
+    
+    .necesitas{
+        font-size: 1.2rem;
+    }
+
+    .numero_necesitas{
+        font-size: 1.1rem;
+    }
 }
 
 @media (max-width: 400px){
@@ -143,5 +150,9 @@
         padding-left: 10%;
         padding-right: 10%;
         font-size: 1rem;
+    }
+
+    .img_contacto{
+        width: 5rem;
     }
 }

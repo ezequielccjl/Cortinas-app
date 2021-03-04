@@ -31,9 +31,9 @@ export const Contacto = () => {
             </div>
             <div className="section_necesitas">
                 <img className="img_contacto" src={logo} alt="logo"></img>
-                <div className="necesitas">
-                    <span>¿Necesitas tus cortinas?</span>
-                    <span>¡Llamanos y te damos tu presupuesto!</span>
+                <div className="necesitas row">
+                    <span className="col-sm-12">¿Necesitas tus cortinas?</span>
+                    <span className="col-sm-12">¡Llamanos y te damos tu presupuesto!</span>
                 </div>
                 <div className="numero_necesitas">
                     <div className="line"></div>
