@@ -1,4 +1,5 @@
 import React, {useEffect} from 'react'
+import {Link} from 'react-router-dom'
 import $ from 'jquery'
 
 import "../CSS/landing.css"
@@ -22,7 +23,9 @@ export const Landing = () => {
             <header className="landing-page">
                 <div className="cont-titulos">
                     <div className="cont-logo-titulo">
-                        <img src={logo} alt="logo"></img>
+                        <Link to="/contacto">
+                            <img src={logo} alt="logo"></img>
+                        </Link>
                         <div className="titulo-landing">CORTINAS . YA</div>
 
                     </div>
