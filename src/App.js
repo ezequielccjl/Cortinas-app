@@ -1,25 +1,35 @@
-import logo from './logo.svg';
+import { BrowserRouter, Switch, Route} from 'react-router-dom'
+
 import './App.css';
 
 //Components
 import {Navbar} from './components/Navbar'
 import {Landing} from './components/Landing'
 import {WppButton} from './components/WppButton'
+import {Contacto} from './components/Contacto'
 
 function App() {
   return (
     <div className="App">
+      
+      <BrowserRouter>
+      
       <Navbar />
-      <Landing />
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Website under development...
-        </p>
-      </header>
-
       <WppButton />
+      
+      <Switch>
 
+        <Route exact path="/">
+          <Landing />
+        </Route>
+
+        <Route path="/contacto">
+          <Contacto />
+        </Route>
+
+      </Switch>
+
+      </BrowserRouter>
     </div>
   );
 }

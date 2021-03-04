@@ -1,4 +1,5 @@
 import React, {useEffect} from 'react'
+import {Link} from 'react-router-dom'
 import $ from 'jquery'
 import '../CSS/navbar.css'
 
@@ -54,21 +55,32 @@ export const Navbar = () => {
         <div className="cont-navbar">
             <div className="navbar">
                 <div className="titulo-nav">
-                    CORTINAS . YA
+                    <Link to="/">
+                        CORTINAS . YA
+                    </Link>
                 </div>
                 <div className="nav-menu" >
                     <ul className="nav-ul">
-                        <li>
-                            <a className="nav-link nav-link-catalogo">Catálogo</a>
+                        {/* Las a's tenian de clase a nav-link */}
+                        <li className="nav-link nav-link-catalogo">
+                            <Link to="">
+                                Catálogo
+                            </Link>
                         </li>
-                        <li>
-                            <a className="nav-link">Quiénes Somos</a>
+                        <li className="nav-link">
+                            <Link to="">
+                                Quiénes Somos
+                            </Link>
                         </li>
-                        <li>
-                            <a className="nav-link">Galería</a>
+                        <li className="nav-link">
+                            <Link to="">
+                                Galería
+                            </Link>
                         </li>
-                        <li>
-                            <a className="nav-link">Contacto</a>
+                        <li className="nav-link">
+                            <Link to="/contacto">
+                                Contacto
+                            </Link>
                         </li>
                     </ul>
                     <div className="arrow-cont">
