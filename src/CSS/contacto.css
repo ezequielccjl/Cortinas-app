@@ -83,6 +83,10 @@
     width: 6rem;
 }
 
+.cont_mapa{
+    margin-bottom: -0.5rem;
+}
+
 .mapa_contacto{
     height: 45vh;
     width: 100%;
@@ -125,6 +129,7 @@
         padding-left: 10%;
         padding-right: 10%;
     }
+
 }
 
 @media (max-width: 500px){

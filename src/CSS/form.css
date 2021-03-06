@@ -1,0 +1,40 @@
+
+
+.form{
+    width: 95%;
+}
+
+.un_input{
+    width: 100%;
+    padding: 0.2rem;
+    padding-left: 1rem;
+
+    border-width: 1.5px;
+    border-color: rgba(0, 0, 0, 0.5);
+    margin-bottom: .3rem;
+    background-color: transparent;
+}
+
+.cont_btn_submit{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.btn_submit{
+    background-color: transparent;
+    border-style: solid;
+}
+
+.linea{
+    height: 2px;
+    width: 2rem;
+    background-color: black;
+
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+textarea{
+    resize: none;
+    height: 6rem;
+}

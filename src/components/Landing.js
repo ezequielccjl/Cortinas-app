@@ -1,6 +1,5 @@
-import React, {useEffect} from 'react'
+import React from 'react'
 import {Link} from 'react-router-dom'
-import $ from 'jquery'
 
 import "../CSS/landing.css"
 
@@ -35,17 +34,17 @@ export const Landing = () => {
 
             <section className="section-ejemplos row">
                 <div className="item-landing col-xl-4 col-lg-4 col-xs-12">
-                    <img src={transparente}></img>
+                    <img src={transparente} alt="transparente"></img>
                     <div>SUNSCREEN</div>
                     <div>Transparente</div>
                 </div>
                 <div className="item-landing col-xl-4 col-lg-4 col-xs-12">
-                    <img src={translucida}></img>
+                    <img src={translucida} alt="translucida"></img>
                     <div>DECO</div>
                     <div>Translucida</div>
                 </div>
                 <div className="item-landing col-xl-4 col-lg-4 col-xs-12">
-                    <img src={blackout}></img>
+                    <img src={blackout} alt="blackout"></img>
                     <div>BLACK OUT</div>
                     <div>Oscuridad Total</div>
                 </div>
