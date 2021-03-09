@@ -32,7 +32,6 @@ export const Contacto = () => {
                 
             <div className="section_form row">
                 
-                <div className='titulo_sec_contacto'>CONTACTO</div>
                 <InfoContacto />
                 <FormContainer />
                 

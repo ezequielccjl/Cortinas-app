@@ -1,0 +1,11 @@
+.section_verticales{
+    padding-top: 4.6rem;
+}
+
+.land_verticales{
+    background-image: url("../../imgs/vertical.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 30vh;
+}

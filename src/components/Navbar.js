@@ -2,12 +2,39 @@ import React, {useEffect} from 'react'
 import {Link} from 'react-router-dom'
 import $ from 'jquery'
 import '../CSS/navbar.css'
+import {Verticales} from './products/Verticales'
+
 
 export const Navbar = () => {
 
     let nav, landing, total;
 
-    const categorias = ["Roller Black Out","Roller Sun Screen","Roller Deco","Roller Impresas","Roller Motorizadas","Verticales","Duo","Horizontales"]
+    const categorias = [
+        {
+            id: "blackout",
+            nombre: "Roller Black Out"
+        },{
+            id: "sunscreen",
+            nombre: "Roller Sun Screen" 
+        },{
+            id: "deco",
+            nombre: "Roller Deco"
+        },{
+            id: "impresas",
+            nombre: "Roller Impresas"
+        },{
+            id: "motorizadas",
+            nombre: "Roller Motorizadas"
+        },{
+            id: "verticales",
+            nombre: "Verticales"
+        },{
+            id: "duo",
+            nombre: "Duo"
+        },{
+            id: "horizontales",
+            nombre: "Horizontales"
+        }]
 
     function scrollHandler() {
         if (window.pageYOffset>total) {
@@ -22,7 +49,7 @@ export const Navbar = () => {
 
     function catalogoHandler() {
         $(".cont_menu_catalogo").toggleClass("bajar_menu_catalogo");
-        $(".arrow-cont").toggleClass("voltear-arrow-cont")
+        document.querySelector(".arrow-cont").classList.toggle("voltear-arrow-cont")
     }
 
     function calculoHeight() {
@@ -34,6 +61,7 @@ export const Navbar = () => {
     useEffect(()=>{
 
         const opCatalogo = document.querySelector(".arrow-cont")
+        const liCatalogo = document.querySelector(".nav-link-catalogo")
 
         calculoHeight()
 
@@ -42,11 +70,13 @@ export const Navbar = () => {
         window.addEventListener('resize', calculoHeight);
 
         opCatalogo.addEventListener("click", catalogoHandler)
+        liCatalogo.addEventListener("click", catalogoHandler)
         
         return ()=>{
             window.removeEventListener('scroll', scrollHandler)
             window.removeEventListener('resize', calculoHeight);
             opCatalogo.removeEventListener("click", catalogoHandler)
+            liCatalogo.removeEventListener("click", catalogoHandler)
         }
 
     },[])
@@ -63,9 +93,9 @@ export const Navbar = () => {
                     <ul className="nav-ul">
                         {/* Las a's tenian de clase a nav-link */}
                         <li className="nav-link nav-link-catalogo">
-                            <Link to="">
-                                Catálogo
-                            </Link>
+                            
+                            Productos
+                            
                         </li>
                         <li className="nav-link">
                             <Link to="">
@@ -92,7 +122,11 @@ export const Navbar = () => {
                 <ul className="ul_menu_catalogo">
                     {categorias.map((i)=>{
                         return(
-                            <li key={categorias.indexOf(i)} className="li_menu-catalogo">{i}</li>
+                            <li key={categorias.indexOf(i)} className="li_menu-catalogo" onClick={catalogoHandler}>
+                                <Link to= {`/productos/${i.id}`}>
+                                    {i.nombre}
+                                </Link>
+                            </li>
                         )
                     })}
                 </ul>

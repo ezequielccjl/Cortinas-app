@@ -8,7 +8,11 @@ import {Landing} from './components/Landing'
 import {WppButton} from './components/WppButton'
 import {Contacto} from './components/Contacto'
 
+//Productos
+import {Verticales} from './components/products/Verticales'
+
 function App() {
+
   return (
     <div className="App">
       
@@ -26,6 +30,12 @@ function App() {
         <Route path="/contacto">
           <Contacto />
         </Route>
+
+        <Route path="/productos/verticales">
+          <Verticales />
+        </Route>
+
+        
 
       </Switch>
 

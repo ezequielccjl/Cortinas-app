@@ -1,5 +1,9 @@
 
 
+.cont_form{
+    padding-top: 2rem;
+}
+
 .form{
     width: 95%;
 }
@@ -23,6 +27,7 @@
 .btn_submit{
     background-color: transparent;
     border-style: solid;
+    border-color: rgba(0, 0, 0, 0.459);
 }
 
 .linea{
