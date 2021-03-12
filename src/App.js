@@ -9,7 +9,7 @@ import {WppButton} from './components/WppButton'
 import {Contacto} from './components/Contacto'
 
 //Productos
-import {Verticales} from './components/products/Verticales'
+import {ProductoContainer} from './components/ProductoContainer'
 
 function App() {
 
@@ -31,8 +31,8 @@ function App() {
           <Contacto />
         </Route>
 
-        <Route path="/productos/verticales">
-          <Verticales />
+        <Route path="/productos/:idProducto">
+          <ProductoContainer />
         </Route>
 
         

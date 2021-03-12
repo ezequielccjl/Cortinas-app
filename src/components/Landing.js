@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useEffect} from 'react'
 import {Link} from 'react-router-dom'
 
 import "../CSS/landing.css"
@@ -8,14 +8,11 @@ import translucida from '../imgs/translucida.png'
 import transparente from '../imgs/transparente.png'
 import blackout from '../imgs/blackout.png'
 
+
 //Logo
 import logo from '../icons/logo-cortinas.png'
 
 export const Landing = () => {
-
-//.titulo-landing
-
-    
 
     return (
         <div className="section-landing">

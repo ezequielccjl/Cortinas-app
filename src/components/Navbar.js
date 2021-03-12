@@ -2,11 +2,10 @@ import React, {useEffect} from 'react'
 import {Link} from 'react-router-dom'
 import $ from 'jquery'
 import '../CSS/navbar.css'
-import {Verticales} from './products/Verticales'
 
 
 export const Navbar = () => {
-
+    
     let nav, landing, total;
 
     const categorias = [
@@ -124,7 +123,9 @@ export const Navbar = () => {
                         return(
                             <li key={categorias.indexOf(i)} className="li_menu-catalogo" onClick={catalogoHandler}>
                                 <Link to= {`/productos/${i.id}`}>
+                                    <div className="ancla">
                                     {i.nombre}
+                                    </div>
                                 </Link>
                             </li>
                         )

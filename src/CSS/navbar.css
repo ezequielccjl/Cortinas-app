@@ -144,8 +144,12 @@
     transition: .4s ease-in-out;
 }
 
-.li_menu-catalogo a{
+.li_menu-catalogo > a{
     color: white;
+}
+
+.ancla{
+    width: 100%;
 }
 
 .li_menu-catalogo:hover{
