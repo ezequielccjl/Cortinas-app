@@ -4,9 +4,9 @@ import {Link} from 'react-router-dom'
 import "../CSS/landing.css"
 
 //Imagenes 
-import translucida from '../imgs/translucida.png'
-import transparente from '../imgs/transparente.png'
-import blackout from '../imgs/blackout.png'
+import translucida from '../imgProds/deco/deco.png'
+import transparente from '../imgProds/sunscreen/sunscreen.png'
+import blackout from '../imgProds/blackout/blackout.png'
 
 
 //Logo
@@ -20,12 +20,12 @@ export const Landing = () => {
                 <div className="cont-titulos">
                     <div className="cont-logo-titulo">
                         <Link to="/contacto">
-                            <img src={logo} alt="logo"></img>
+                            <img className="img_logo" src={logo} alt="logo"></img>
                         </Link>
                         <div className="titulo-landing">CORTINAS . YA</div>
 
                     </div>
-                    <div className="subtitulo-landing">Fábrica de cortinas roller y black out.</div>
+                    <div className="subtitulo-landing">Fábrica de Cortinas Roller y Lonas.</div>
                 </div>
             </header>
 

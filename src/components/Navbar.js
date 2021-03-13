@@ -53,7 +53,7 @@ export const Navbar = () => {
 
     function calculoHeight() {
         nav = $(".navbar").height();
-        landing = $(".landing-page").height();
+        landing = $(".img_logo").height();
         total = nav+landing-40;
     }
 

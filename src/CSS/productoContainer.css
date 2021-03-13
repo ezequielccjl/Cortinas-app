@@ -1,6 +1,11 @@
 .section_producto{
-    height: 20vh;
     margin-top: 4.6rem;
 
     text-align: initial;
+}
+
+@media (max-width: 600px){
+    .section_producto{
+        margin-top: 3.8rem;
+    }   
 }

@@ -16,6 +16,10 @@
     background-image: url(../imgProds/blackout/blackout-cover.jpg);
 }
 
+.cover_verticales{
+    background-image: url(../imgProds/vertical/vertical-cover.jpg);
+}
+
 .cont_titulo_sub{
     background: rgba(0, 0, 0, 0.5);
     color: white;
@@ -35,6 +39,7 @@
 .titulo{
     font-family: "Abril Fatface", serif;
     font-size: 3rem;
+    text-align: center;
 }
 
 .subtitulo{
@@ -56,8 +61,15 @@
     color: white;
 }
 
+.cont_img_muestra{
+    display: flex;
+    justify-content: flex-end;
+}
+
 .cont_ventajas{
-    margin-left: 4rem;
+    display: flex;
+    justify-content: flex-start;
+    padding-left: 4rem;
 }
 
 .cont_telas{
@@ -128,4 +140,56 @@
     font-family: "Roboto", sans-serif;
     font-style: italic;
     font-weight: 300;
+}
+
+@media (max-width: 768px){
+    .cont_img_muestra{
+        justify-content: center;
+    }
+
+    .cont_ventajas{
+        justify-content: center;
+        padding-left: 0;
+        text-align: center;
+    }
+
+    .img_muestra{
+        width: 15rem;
+    }
+
+    .cont_muestra{
+        padding-top: 2rem;
+    }
+}
+
+@media (max-width: 550px){
+    .cont_telas{
+        padding: 2rem;
+    }
+    
+    .img_muestra{
+        width: 10rem;
+    }
+
+    .cont_ventajas{
+        margin-left: 0;
+    }
+
+    .cont_titulo_sub{
+        padding: 1.5rem;
+        padding-left: 3rem;
+        padding-right: 3rem;
+    }
+
+    .titulo{
+        font-size: 2rem;
+    }
+
+    .subtitulo{
+        font-size: 1.2rem;
+    }
+
+    .nuestras_telas{
+        font-size: 2.4rem;
+    }
 }

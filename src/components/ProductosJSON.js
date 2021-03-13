@@ -1,5 +1,5 @@
 //IMPORT IMAGES BLACKOUT
-import imgMuestra from '../imgProds/blackout/blackout.png'
+import imgMuestraBO from '../imgProds/blackout/blackout.png'
 
     //Fiberglass
     import bright_white from '../imgProds/blackout/fiberglass/B.O-CLÁSICO-BRIGHT-WHITE-MOR147-400x516.jpg'
@@ -18,12 +18,14 @@ import imgMuestra from '../imgProds/blackout/blackout.png'
     import blanco from '../imgProds/blackout/standard/blanco-400x516.png'
     import natural from '../imgProds/blackout/standard/natural-400x516.png'
 
+//IMPORT IMAGES VERTICAL
+import imgMuestraVE from '../imgProds/vertical/vertical.png'
 
 export const listaCatalogo = [{
     id: "blackout",
     titulo: "BLACK OUT",
     subtitulo: "Oscuridad",
-    imgMuestra: imgMuestra,
+    imgMuestra: imgMuestraBO,
     ventajas: [
         "Aislante Térmico",
         "Control Acústico",
@@ -74,4 +76,28 @@ export const listaCatalogo = [{
             img: gris
         }]
     }]
+},{
+    id: "verticales",
+    titulo: "VERTICALES",
+    subtitulo: "Regulable",
+    imgMuestra: imgMuestraVE,
+    ventajas: [
+        "Control Acústico",
+        "Control Lumínico",
+        "Durabilidad Asegurada",
+        "Diferentes Niveles de Privacidad",
+        "Flexibilidad"
+    ],
+    telas: [{
+        nombre: "Premium Plus",
+        arrayTelas: [
+
+        ]
+    },{
+        nombre: "Premium",
+        arrayTelas: [
+            
+        ]
+    }]
+
 }]

@@ -31,6 +31,7 @@
 .subtitulo-landing{
     font-family: 'Roboto', sans;
     font-size: 1.5rem;
+    font-weight: 300;
 }
 
 .cont-logo-titulo{
@@ -120,6 +121,9 @@
 .item-landing div:last-child{
     margin-top: 0.5rem;
     font-family: "Roboto", sans-serif;
+    font-style: italic;
+    font-weight: 300;
+
 }
 
 .section-landing .row{

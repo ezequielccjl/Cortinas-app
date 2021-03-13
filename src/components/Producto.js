@@ -10,11 +10,11 @@ export const Producto = ({item}) => {
                     <div className="subtitulo">{item.subtitulo}</div>
                 </div>
             </div>
-            <div className="cont_muestra">
-                <div>
+            <div className="cont_muestra row">
+                <div className="cont_img_muestra col-xl-6 col-md-6 col-sm-12">
                     <img className="img_muestra" src={item.imgMuestra} alt={item.id}></img>
                 </div>
-                <div className="cont_ventajas">
+                <div className="cont_ventajas col-xl-6 col-md-6 col-sm-12">
                     <ul>
                         {item.ventajas.map((ventaja)=>{
                             return(
@@ -35,7 +35,7 @@ export const Producto = ({item}) => {
                             <div className="row row_telas">
                                 {tela.arrayTelas.map((una_tela)=>{
                                     return(
-                                        <div className="col-4 una_tela" key={tela.arrayTelas.indexOf(una_tela)}>
+                                        <div className="col-xl-4 col-md-6 col-sm-12 una_tela" key={tela.arrayTelas.indexOf(una_tela)}>
                                             <img className="img_tela" src={una_tela.img}></img>
                                             <div className="pie_img">{una_tela.nombreTela}</div>
                                         </div>
