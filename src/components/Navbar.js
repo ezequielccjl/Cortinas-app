@@ -39,16 +39,31 @@ export const Navbar = () => {
         if (window.pageYOffset>total) {
             $(".navbar").addClass("scroll-nav")
             $(".cont_menu_catalogo").addClass("cont_menu_catalogo_scroll")
+            $(".cont_menu_resp").addClass("cont_menu_resp_scroll")
         }
         if (window.pageYOffset<total) {
             $(".navbar").removeClass("scroll-nav")
+            $(".cont_menu_resp").removeClass("cont_menu_resp_scroll")
             $(".cont_menu_catalogo").removeClass("cont_menu_catalogo_scroll")
         }
     }
 
+    //HANDLER DEL NAV-LINK PRODUCTOS EN WEB
     function catalogoHandler() {
-        $(".cont_menu_catalogo").toggleClass("bajar_menu_catalogo");
+        //document.querySelector(".cont_menu_resp").classList.toggle("bajar_menu_resp");
+        document.querySelector(".cont_menu_catalogo").classList.toggle("bajar_menu_catalogo");
         document.querySelector(".arrow-cont").classList.toggle("voltear-arrow-cont")
+    }
+
+    function catalogoHandlerArrow() {
+        document.querySelector(".cont_menu_resp").classList.toggle("bajar_menu_resp");
+        document.querySelector(".cont_menu_catalogo").classList.remove("bajar_menu_catalogo");
+        document.querySelector(".arrow-cont").classList.toggle("voltear-arrow-cont")
+    }
+
+    //HANDLER DEL NAV-LINK PRODUCTOS EN WEB
+    function catalogoHandlerResp() {
+        document.querySelector(".cont_menu_catalogo").classList.toggle("bajar_menu_catalogo");
     }
 
     function calculoHeight() {
@@ -68,7 +83,7 @@ export const Navbar = () => {
 
         window.addEventListener('resize', calculoHeight);
 
-        opCatalogo.addEventListener("click", catalogoHandler)
+        opCatalogo.addEventListener("click", catalogoHandlerArrow)
         liCatalogo.addEventListener("click", catalogoHandler)
         
         return ()=>{
@@ -98,11 +113,6 @@ export const Navbar = () => {
                         </li>
                         <li className="nav-link">
                             <Link to="">
-                                Quiénes Somos
-                            </Link>
-                        </li>
-                        <li className="nav-link">
-                            <Link to="">
                                 Galería
                             </Link>
                         </li>
@@ -116,6 +126,23 @@ export const Navbar = () => {
 
                     </div>
                 </div>
+            </div>
+            <div className="cont_menu_resp">
+                <ul className="ul_resp">
+                    <li onClick={catalogoHandlerResp} className="op_resp op_resp_catalogo">
+                        Productos
+                    </li>
+                    <li className="op_resp">
+                        <Link to="">
+                            Galería
+                        </Link>
+                    </li>
+                    <li className="op_resp">
+                        <Link to="/contacto">
+                            Contacto
+                        </Link>
+                    </li>
+                </ul>
             </div>
             <div className="cont_menu_catalogo" >
                 <ul className="ul_menu_catalogo">
