@@ -21,7 +21,8 @@ import imgMuestraBO from '../imgProds/blackout/blackout.png'
 //IMPORT IMAGES VERTICAL
 import imgMuestraVE from '../imgProds/vertical/vertical.png'
 
-export const listaCatalogo = [{
+export const listaCatalogo = [
+    {
     id: "blackout",
     titulo: "BLACK OUT",
     subtitulo: "Oscuridad",
@@ -100,4 +101,20 @@ export const listaCatalogo = [{
         ]
     }]
 
+},{
+   id: "motorizadas",
+   titulo: "MOTORIZADAS",
+   subtitulo: "",
+   ventajas: [
+       "Confort y tecnología",
+       "Control mediante control remoto",
+       "Evita roturas en paredes existentes",
+       "Tecnología fiable y sin cables"
+   ],
+   telas: [{
+       nombre:"",
+       arrayTelas: [
+
+       ]
+   }]
 }]
