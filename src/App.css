@@ -32,6 +32,11 @@
   margin: 0;
 }
 
+.row>*{
+  padding: 0;
+
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);

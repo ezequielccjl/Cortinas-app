@@ -1,12 +1,13 @@
 import React, {useEffect} from 'react'
 import {Link} from 'react-router-dom'
-import $ from 'jquery'
+//import $ from 'jquery'
 import '../CSS/navbar.css'
 
 
 export const Navbar = () => {
     
-    let nav, landing, total;
+    let navH, landingH, total;
+    let nav, landing;
 
     const categorias = [
         {
@@ -37,20 +38,20 @@ export const Navbar = () => {
 
     function scrollHandler() {
         if (window.pageYOffset>total) {
-            $(".navbar").addClass("scroll-nav")
-            $(".cont_menu_catalogo").addClass("cont_menu_catalogo_scroll")
-            $(".cont_menu_resp").addClass("cont_menu_resp_scroll")
+            document.querySelector(".navbar").classList.add("scroll-nav")
+            document.querySelector(".cont_menu_catalogo").classList.add("cont_menu_catalogo_scroll")
+            document.querySelector(".cont_menu_resp").classList.add("cont_menu_resp_scroll")
         }
         if (window.pageYOffset<total) {
-            $(".navbar").removeClass("scroll-nav")
-            $(".cont_menu_resp").removeClass("cont_menu_resp_scroll")
-            $(".cont_menu_catalogo").removeClass("cont_menu_catalogo_scroll")
+            document.querySelector(".navbar").classList.remove("scroll-nav")
+            document.querySelector(".cont_menu_resp").classList.remove("cont_menu_resp_scroll")
+            document.querySelector(".cont_menu_catalogo").classList.remove("cont_menu_catalogo_scroll")
         }
     }
 
     //HANDLER DEL NAV-LINK PRODUCTOS EN WEB
     function catalogoHandler() {
-        //document.querySelector(".cont_menu_resp").classList.toggle("bajar_menu_resp");
+        document.querySelector(".cont_menu_resp").classList.toggle("bajar_menu_resp");
         document.querySelector(".cont_menu_catalogo").classList.toggle("bajar_menu_catalogo");
         document.querySelector(".arrow-cont").classList.toggle("voltear-arrow-cont")
     }
@@ -67,12 +68,15 @@ export const Navbar = () => {
     }
 
     function calculoHeight() {
-        nav = $(".navbar").height();
-        landing = $(".img_logo").height();
-        total = nav+landing-40;
+        navH = nav.clientHeight
+        landingH = landing.clientHeight;
+        total = navH+landingH-40;
     }
 
     useEffect(()=>{
+
+        nav = document.querySelector(".navbar")
+        landing = document.querySelector(".img_logo")
 
         const opCatalogo = document.querySelector(".arrow-cont")
         const liCatalogo = document.querySelector(".nav-link-catalogo")
@@ -112,7 +116,7 @@ export const Navbar = () => {
                             
                         </li>
                         <li className="nav-link">
-                            <Link to="">
+                            <Link to="/galeria">
                                 Galería
                             </Link>
                         </li>
@@ -133,7 +137,7 @@ export const Navbar = () => {
                         Productos
                     </li>
                     <li className="op_resp">
-                        <Link to="">
+                        <Link to="/galeria">
                             Galería
                         </Link>
                     </li>

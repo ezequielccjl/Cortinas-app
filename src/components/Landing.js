@@ -25,23 +25,23 @@ export const Landing = () => {
                         <div className="titulo-landing">CORTINAS . YA</div>
 
                     </div>
-                    <div className="subtitulo-landing">Fábrica de Cortinas Roller y Lonas.</div>
+                    <div className="subtitulo-landing">Fábrica de Cortinas y  Toldos de Lona.</div>
                 </div>
             </header>
 
             <section className="section-ejemplos row">
                 <div className="item-landing col-xl-4 col-lg-4 col-xs-12">
-                    <img src={transparente} alt="transparente"></img>
+                    <img className="muestra_land" src={transparente} alt="transparente"></img>
                     <div>SUNSCREEN</div>
                     <div>Transparente</div>
                 </div>
                 <div className="item-landing col-xl-4 col-lg-4 col-xs-12">
-                    <img src={translucida} alt="translucida"></img>
+                    <img className="muestra_land" src={translucida} alt="translucida"></img>
                     <div>DECO</div>
                     <div>Translucida</div>
                 </div>
                 <div className="item-landing col-xl-4 col-lg-4 col-xs-12">
-                    <img src={blackout} alt="blackout"></img>
+                    <img className="muestra_land" src={blackout} alt="blackout"></img>
                     <div>BLACK OUT</div>
                     <div>Oscuridad Total</div>
                 </div>

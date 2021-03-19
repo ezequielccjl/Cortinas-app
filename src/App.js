@@ -7,6 +7,7 @@ import {Navbar} from './components/Navbar'
 import {Landing} from './components/Landing'
 import {WppButton} from './components/WppButton'
 import {Contacto} from './components/Contacto'
+import {Galeria} from './components/Galeria'
 
 //Productos
 import {ProductoContainer} from './components/ProductoContainer'
@@ -29,6 +30,10 @@ function App() {
 
         <Route path="/contacto">
           <Contacto />
+        </Route>
+
+        <Route path="/galeria">
+          <Galeria />
         </Route>
 
         <Route path="/productos/:idProducto">
