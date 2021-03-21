@@ -158,6 +158,20 @@
     }
 }
 
+@media (max-width: 1000px){
+    .img_modal{
+        height: auto;
+        width: 80%;
+    }
+
+    .cerrar_icon{
+        top: 1rem;
+        right: 1rem;
+        width: 3rem;
+    }
+
+}
+
 @media (max-width: 768px){
     .cont_galeria{
         padding-left: 15%;
