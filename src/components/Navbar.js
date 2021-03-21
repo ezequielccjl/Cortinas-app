@@ -68,6 +68,7 @@ export const Navbar = () => {
     }
 
     function calculoHeight() {
+        console.log("SE EJECUTA EL CALCULO HEIGHT")
         navH = nav.clientHeight
         landingH = landing.clientHeight;
         total = navH+landingH-40;
@@ -81,7 +82,7 @@ export const Navbar = () => {
         const opCatalogo = document.querySelector(".arrow-cont")
         const liCatalogo = document.querySelector(".nav-link-catalogo")
 
-        calculoHeight()
+        //calculoHeight()
 
         window.addEventListener('scroll', scrollHandler)
 
@@ -109,11 +110,8 @@ export const Navbar = () => {
                 </div>
                 <div className="nav-menu" >
                     <ul className="nav-ul">
-                        {/* Las a's tenian de clase a nav-link */}
                         <li className="nav-link nav-link-catalogo">
-                            
                             Productos
-                            
                         </li>
                         <li className="nav-link">
                             <Link to="/galeria">
@@ -136,12 +134,12 @@ export const Navbar = () => {
                     <li onClick={catalogoHandlerResp} className="op_resp op_resp_catalogo">
                         Productos
                     </li>
-                    <li className="op_resp">
+                    <li className="op_resp" onClick={catalogoHandlerArrow}>
                         <Link to="/galeria">
                             Galería
                         </Link>
                     </li>
-                    <li className="op_resp">
+                    <li className="op_resp" onClick={catalogoHandlerArrow}>
                         <Link to="/contacto">
                             Contacto
                         </Link>
