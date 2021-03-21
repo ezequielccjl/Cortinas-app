@@ -1,48 +1,197 @@
 .section_galeria{
-    padding-left: 15%;
-    padding-right: 15%;
     padding-top: 4.6rem;
 
-    background-color: rgb(255, 228, 193);
+    background: linear-gradient(90deg, rgba(219,183,137,1) 0%, rgba(255,228,193,1) 35%, rgba(219,183,137,1) 100%);
 
+}
+
+.titulo_galeria{
+    font-size: 4rem;
+    font-family: "Abril Fatface", serif;
+}
+
+.subtitulo_galeria{
+    font-size: 1.3rem;
+    font-family: "Roboto";
+    font-style: italic;
+    font-weight: 300;
+}
+
+.header_galeria{
+    background-image: url('../galeria/galeria-cover.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cont_header_g{
+    background: rgba(0, 0, 0, 0.4);
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    height: 100%;
+    width: 100%;
+
+    color: white;
 }
 
 .cont_galeria{
+    margin-top: 2rem;
+    padding-bottom: 2rem;
     padding-left: 1rem;
     padding-right: 1rem;
+    
+    padding-left: 15%;
+    padding-right: 15%;
 }
 
 .img_galeria{
-    width: 95%;
-    height: 20rem;
+    width: 90%;
+    height: 18rem;
     object-fit: cover;
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
 
-    transition: .5s ease-in-out;
+    transition: .3s ease-in-out;
 }
   
 .img_galeria:hover{
-    filter: grayscale(80%);
+    filter: grayscale(100%);
+    transform: scale(1.05);
     cursor: pointer;
 }
   
+.arrow {
+    text-align: center;
+    margin-top: 3rem;
+}
+
+.bounce {
+    animation: bounce 2s infinite;
+}
+
+.fa-arrow-down{
+    color: white;
+    font-size: 2rem;
+}
+
+.cont_btn_cargar{
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.btn_cargar{
+    background: transparent;
+    color: rgb(0, 51, 51);
+    border: 2px rgb(0, 51, 51) solid;
+    font-size: 1.5rem;
+    padding: 1rem;
+    padding-right: 2rem;
+    padding-left: 2rem;
+    border-radius: 2rem;
+    font-family: "Roboto", sans-serif;
+
+    transition: .3s ease-in-out;
+}
+
+.btn_cargar:hover{
+    background: rgba(0, 51, 51, 0.2);
+}
+  
+/*MODAL*/
+
+.modal-img{
+    position: fixed;
+    top: -150vh;
+    width: 100%;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.4);
+    z-index: 100;
+
+    transition: .5s ease-in-out;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img_modal{
+    z-index: 101;
+    height: 80%;
+}
+
+.bajar_img_modal{
+    top: 0;
+}
+
+.cerrar_icon{
+    position: absolute;
+    top: 3rem;
+    right: 3rem;
+}
+
+.cerrar_icon:hover{
+    cursor: pointer;
+}
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+      transform: translateY(0);
+    }
+    40% {
+      transform: translateY(-30px);
+    }
+    60% {
+      transform: translateY(-15px);
+    }
+}
 
 
 @media (max-width: 1400px){
-    .section_galeria{
+    .cont_galeria{
         padding-left: 8%;
         padding-right: 8%;
     }
 }
 
 @media (max-width: 768px){
-    .section_galeria{
+    .cont_galeria{
         padding-left: 15%;
         padding-right: 15%;
     }
+
+    .titulo_galeria{
+        font-size: 3rem;
+    }
 }
-@media (max-width: 468px){
+
+@media (max-width: 600px){
     .section_galeria{
+        padding-top: 3.5rem;
+    }
+}
+
+@media (max-width: 500px){
+    .titulo_galeria{
+        font-size: 2.2rem;
+    }
+
+    .subtitulo_galeria{
+        font-size: 1rem;
+    }
+
+    .cont_header_g{
+        padding-top: 4rem;
+        padding-bottom: 2rem;
+    }
+}
+
+@media (max-width: 468px){
+    .cont_galeria{
         padding-left: 8%;
         padding-right: 8%;
     }
