@@ -5,7 +5,7 @@ export const Producto = ({item, animacion}) => {
     return(
         <div className="cont_producto">
             <div className={`cover cover_` + item.id}>
-                <div className="cont_titulo_sub animate__animated">
+                <div className="cont_titulo_sub animate__animated animate__fadeInDown">
                     <div className="titulo">{item.titulo}</div>
                     <div className="subtitulo">{item.subtitulo}</div>
                 </div>

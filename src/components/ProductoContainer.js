@@ -38,7 +38,6 @@ export const ProductoContainer = () => {
 
     useEffect(()=>{
         console.log(prodRender)
-        animacion()
     }, [prodRender])
 
     return (
