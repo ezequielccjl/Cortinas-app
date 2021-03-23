@@ -20,6 +20,26 @@
     background-image: url(../imgProds/vertical/vertical-cover.jpg);
 }
 
+.cover_sunscreen{
+    background-image: url(../imgProds/sunscreen/sunscreen-cover.jpg);
+}
+
+.cover_deco{
+    background-image: url(../imgProds/deco/deco-cover.jpg);
+}
+
+.cover_duo{
+    background-image: url(../imgProds/duo/duo-cover.jpg);
+}
+
+.cover_horizontales{
+    background-image: url(../imgProds/horizontal/horizontal-cover.jpg);
+}
+
+.cover_impresas{
+    background-image: url(../imgProds/impresas/impresas-cover.jpg);
+}
+
 .cover_motorizadas{
     transition: 5s;
 
@@ -93,8 +113,28 @@
 
 .cont_ventajas{
     display: flex;
+    flex-direction: column;
     justify-content: flex-start;
     padding-left: 4rem;
+
+    font-family: "Roboto";
+}
+
+.ventajas_titulo{
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+.li_ventajas{
+    font-size: 1.3rem;
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 2rem;
+    padding: 1rem;
+    color: black;
+    width: 18rem ;
+    text-align: center;
+    margin-bottom: .5rem;
+    
 }
 
 .cont_telas{
@@ -125,8 +165,6 @@
 
 .row_telas{
     width: 100%;
-    display: flex;
-    justify-content: space-around;
 }
 
 .img_tela{
@@ -184,6 +222,13 @@
 
     .cont_muestra{
         padding-top: 2rem;
+    }
+
+    .ul_ventajas{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
     }
 }
 

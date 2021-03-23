@@ -21,6 +21,22 @@ import imgMuestraBO from '../imgProds/blackout/blackout.png'
 //IMPORT IMAGES VERTICAL
 import imgMuestraVE from '../imgProds/vertical/vertical.png'
 
+//IMPORT IMAGES SUNSCREEN
+import imgMuestraSu from '../imgProds/sunscreen/sunscreen.png'
+
+//IMPORT IMAGES DECO
+import imgMuestraDe from '../imgProds/deco/deco.png'
+
+//IMPORT IMAGES DUO
+import imgMuestraDu from '../imgProds/duo/duo.gif'
+
+//IMPORT IMAGES HORIZONTALES
+import imgMuestraHo from '../imgProds/horizontal/horizontal.gif'
+
+//IMPORT IMAGES IMPRESAS
+import imgMuestraIm from '../imgProds/impresas/impresas.png'
+
+
 export const listaCatalogo = [
     {
     id: "blackout",
@@ -117,4 +133,92 @@ export const listaCatalogo = [
 
        ]
    }]
+},{
+    id: "sunscreen",
+    titulo: "SUNSCREEN",
+    subtitulo: "Transparente y Translúcida",
+    imgMuestra: imgMuestraSu,
+    ventajas: [
+        "Visibilidad Exterior",
+        "Fácil Limpieza",
+        "Control Acústico",
+        "Luz Natural",
+        "Visibilidad Exterior",
+        "Durabilidad Asegurada"
+    ],
+    telas: [{
+        nombre: "",
+        arrayTelas: [
+
+        ]
+    }]
+},{
+    id: "deco",
+    titulo: "DECO",
+    subtitulo: "Translúcida",
+    imgMuestra: imgMuestraDe,
+    ventajas: [
+        "Durabilidad Asegurada",
+        "Fácil Limpieza",
+        "Colores Vívidos",
+        "Luz Natural",
+        "Privacidad 24HS"
+    ],
+    telas: [{
+        nombre: "",
+        arrayTelas: [
+
+        ]
+    }]
+},{
+    id: "duo",
+    titulo: "DUO ENROLABLE",
+    subtitulo: "Visibilidad Regulable",
+    imgMuestra: imgMuestraDu,
+    ventajas: [
+        "Visibilidad Regulable",
+        "Control Lumínico",
+        "Durabilidad Asegurada",
+        "Tejidos Técnicos",
+    ],
+    telas: [{
+        nombre: "",
+        arrayTelas: [
+
+        ]
+    }]
+},{
+    id: "horizontales",
+    titulo: "HORIZONTALES",
+    subtitulo: "Láminas Graduable",
+    imgMuestra: imgMuestraHo,
+    ventajas: [
+        "Material Anticorrosivo",
+        "Fácil Limpieza",
+        "Control Lumínico",
+        "Durabilidad Asegurada",
+    ],
+    telas: [{
+        nombre: "",
+        arrayTelas: [
+
+        ]
+    }]
+},{
+    id: "impresas",
+    titulo: "IMPRESAS",
+    subtitulo: "Personalizadas",
+    imgMuestra: imgMuestraIm,
+    ventajas: [
+        "Impresión de Alta Calidad",
+        "Fácil Limpieza",
+        "Colores Vívidos",
+        "Durabilidad Asegurada",
+    ],
+    telas: [{
+        nombre: "",
+        arrayTelas: [
+
+        ]
+    }]
 }]

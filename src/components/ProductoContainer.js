@@ -15,6 +15,13 @@ export const ProductoContainer = () => {
 
     const {idProducto} = useParams()
 
+    const animacion = () => {
+        document.querySelector(".cont_titulo_sub").classList.remove("animate__fadeInDown")
+        setTimeout(()=>{
+            document.querySelector(".cont_titulo_sub").classList.add("animate__fadeInDown")
+        }, 100)
+    }
+
     useEffect(()=>{
         console.log("params: ",idProducto)
         let cont = 0;
@@ -31,6 +38,7 @@ export const ProductoContainer = () => {
 
     useEffect(()=>{
         console.log(prodRender)
+        animacion()
     }, [prodRender])
 
     return (
@@ -38,7 +46,7 @@ export const ProductoContainer = () => {
             {
                 prodRender === undefined ? <h1>No existe prod</h1>
                 :  
-                <Producto item={prodRender} />
+                <Producto item={prodRender} animacion={animacion} />
             }
         </div>
     )
