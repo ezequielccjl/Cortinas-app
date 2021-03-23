@@ -15,6 +15,34 @@ export const ProductoContainer = () => {
 
     const {idProducto} = useParams()
 
+    function dobles(id) {
+        if (id==="dobles") {
+            return (
+                <div className="cont_iframe">
+                    <iframe className="iframe_yt" src="https://www.youtube.com/embed/fIZUyBRc6dk" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+                </div>
+            )
+        }else{
+            if (id==="motorizadas") {
+                return(
+                    <div className="cont_iframe">
+                        <iframe className="iframe_yt" src="https://www.youtube.com/embed/2EXuS10383U" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+                    </div>
+                )
+            }
+        }
+    }
+
+    function cargarMedia(item) {
+        if (item.id !== "motorizadas") {
+            return(
+                <div className="cont_img_muestra col-xl-6 col-md-6 col-sm-12">
+                    <img className={`img_muestra img_${item.id}`} src={item.imgMuestra} alt={item.id}></img>
+                </div>
+            )
+        }
+    }
+
     const animacion = () => {
         document.querySelector(".cont_titulo_sub").classList.remove("animate__fadeInDown")
         setTimeout(()=>{
@@ -45,7 +73,7 @@ export const ProductoContainer = () => {
             {
                 prodRender === undefined ? <h1>No existe prod</h1>
                 :  
-                <Producto item={prodRender} animacion={animacion} />
+                <Producto item={prodRender} animacion={animacion} dobles={dobles} cargarMedia={cargarMedia}/>
             }
         </div>
     )

@@ -40,6 +40,10 @@
     background-image: url(../imgProds/impresas/impresas-cover.jpg);
 }
 
+.cover_dobles{
+    background-image: url(../imgProds/dobles/dobles-cover.jpg);
+}
+
 .cover_motorizadas{
     transition: 5s;
 
@@ -53,6 +57,23 @@
 
     padding-top: 2rem;
     padding-bottom: 2rem;
+}
+
+.img_dobles{
+    width: 25rem;
+    border: 2px white solid;
+}
+
+.cont_iframe{
+    background: linear-gradient(90deg, rgba(0,23,23,1) 0%, rgba(0,51,51,1) 50%, rgba(0,23,23,1) 100%);
+    padding-top: 5rem;
+    padding-top: 5rem;
+    height: 80vh;
+}
+
+.iframe_yt{
+    height: 100%;
+    width: 100%;
 }
 
 @keyframes animate{
@@ -125,6 +146,33 @@
     margin-bottom: 2rem;
 }
 
+.cont_ul_motorizadas{
+    width: 100%;
+    padding-right: 4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.cont_ul_motorizadas .ul_ventajas{
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.cont_ul_motorizadas .li_ventajas{
+    justify-self: center;
+    align-self: center;
+    font-family: "Roboto", sans-serif;
+    font-style: italic;
+}
+
+.cont_ul_motorizadas .ventajas_titulo{
+    font-family: "Abril Fatface", serif;
+    font-size: 3rem;
+}
+
 .li_ventajas{
     font-size: 1.3rem;
     background-color: rgba(255, 255, 255, 0.7);
@@ -134,7 +182,12 @@
     width: 18rem ;
     text-align: center;
     margin-bottom: .5rem;
-    
+    transition: 0.3s ease-in-out;
+}
+
+.li_ventajas:hover{
+    cursor: default;
+    transform: scale(1.05);
 }
 
 .cont_telas{
@@ -205,6 +258,17 @@
     font-weight: 300;
 }
 
+@media (max-width: 1350px){
+    .cont_ul_motorizadas .ul_ventajas{
+        grid-template-columns: 1fr 1fr !important;
+    }
+
+    .cont_ul_motorizadas .li_ventajas{
+        display: flex;
+        justify-content: center;
+    }
+}
+
 @media (max-width: 768px){
     .cont_img_muestra{
         justify-content: center;
@@ -229,6 +293,29 @@
         flex-direction: column;
         align-items: center;
         justify-content: center;
+    }
+
+    .cont_ul_motorizadas{
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+
+    .cont_iframe{
+        height: 50vh;
+    }
+}
+
+@media (max-width: 650px){
+    .cont_ul_motorizadas .ul_ventajas{
+        grid-template-columns: 1fr !important;
+    }
+
+    .cont_ul_motorizadas .li_ventajas{
+        margin-bottom: 1.5rem;
+    }
+
+    .cont_ul_motorizadas .ventajas_titulo{
+        font-size: 2rem;
     }
 }
 
@@ -261,5 +348,9 @@
 
     .nuestras_telas{
         font-size: 2.4rem;
+    }
+
+    .cont_iframe{
+        height: 40vh;
     }
 }

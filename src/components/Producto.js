@@ -1,7 +1,7 @@
 import React from 'react'
 import '../CSS/producto.css'
 
-export const Producto = ({item, animacion}) => {
+export const Producto = ({item, animacion, dobles, cargarMedia}) => {
     return(
         <div className="cont_producto">
             <div className={`cover cover_` + item.id}>
@@ -11,12 +11,12 @@ export const Producto = ({item, animacion}) => {
                 </div>
             </div>
             <div className="cont_muestra row">
-                <div className="cont_img_muestra col-xl-6 col-md-6 col-sm-12">
-                    <img className="img_muestra" src={item.imgMuestra} alt={item.id}></img>
-                </div>
-                <div className="cont_ventajas col-xl-6 col-md-6 col-sm-12">
+                
+                {cargarMedia(item)}
+
+                <div className={`cont_ventajas col-xl-6 col-md-6 col-sm-12 cont_ul_${item.id}`}>
                     <div className="ventajas_titulo">Nuestras Ventajas!</div>
-                    <ul className="ul_ventajas">
+                    <ul className="ul_ventajas" >
                         {item.ventajas.map((ventaja)=>{
                             return(
                                 <li className="li_ventajas" key={item.ventajas.indexOf(ventaja)}>
@@ -27,6 +27,10 @@ export const Producto = ({item, animacion}) => {
                     </ul>
                 </div>
             </div>
+
+            {
+                dobles(item.id)
+            }
             <div className="cont_telas">
 
                 <div className="text-center nuestras_telas">NUESTRAS TELAS</div>

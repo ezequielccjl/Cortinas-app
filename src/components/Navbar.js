@@ -34,6 +34,9 @@ export const Navbar = () => {
         },{
             id: "horizontales",
             nombre: "Horizontales"
+        },{
+            id: "dobles",
+            nombre: "Dobles"
         }]
 
     function scrollHandler() {
@@ -69,9 +72,11 @@ export const Navbar = () => {
 
     function calculoHeight() {
         console.log("SE EJECUTA EL CALCULO HEIGHT")
-        navH = nav.clientHeight
-        landingH = landing.clientHeight;
-        total = navH+landingH-40;
+        if(nav !== null && landing !==null){
+            navH = nav.clientHeight
+            landingH = landing.clientHeight;
+            total = navH+landingH-40;
+        }
     }
 
     useEffect(()=>{

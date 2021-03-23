@@ -36,6 +36,9 @@ import imgMuestraHo from '../imgProds/horizontal/horizontal.gif'
 //IMPORT IMAGES IMPRESAS
 import imgMuestraIm from '../imgProds/impresas/impresas.png'
 
+//IMPORT IMAGES DOBLE
+import imgMuestraDo from '../imgProds/dobles/dobles.jpg'
+
 
 export const listaCatalogo = [
     {
@@ -209,6 +212,23 @@ export const listaCatalogo = [
     titulo: "IMPRESAS",
     subtitulo: "Personalizadas",
     imgMuestra: imgMuestraIm,
+    ventajas: [
+        "Impresión de Alta Calidad",
+        "Fácil Limpieza",
+        "Colores Vívidos",
+        "Durabilidad Asegurada",
+    ],
+    telas: [{
+        nombre: "",
+        arrayTelas: [
+
+        ]
+    }]
+},{
+    id: "dobles",
+    titulo: "DOBLES",
+    subtitulo: "Versatilidad en Ambientes",
+    imgMuestra: imgMuestraDo,
     ventajas: [
         "Impresión de Alta Calidad",
         "Fácil Limpieza",
