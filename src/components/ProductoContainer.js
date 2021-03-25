@@ -3,6 +3,7 @@ import {useParams} from 'react-router-dom'
 
 import {Producto} from './Producto'
 import {listaCatalogo} from './ProductosJSON'
+import {listaTelas} from './TelasJSON'
 
 import '../CSS/productoContainer.css'
 
@@ -73,7 +74,7 @@ export const ProductoContainer = () => {
             {
                 prodRender === undefined ? <h1>No existe prod</h1>
                 :  
-                <Producto item={prodRender} animacion={animacion} dobles={dobles} cargarMedia={cargarMedia}/>
+                <Producto item={prodRender} listaTelas={listaTelas} animacion={animacion} dobles={dobles} cargarMedia={cargarMedia}/>
             }
         </div>
     )
