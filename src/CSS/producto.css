@@ -164,8 +164,6 @@
 .cont_ul_motorizadas .li_ventajas{
     justify-self: center;
     align-self: center;
-    font-family: "Roboto", sans-serif;
-    font-style: italic;
 }
 
 .cont_ul_motorizadas .ventajas_titulo{
@@ -183,6 +181,8 @@
     text-align: center;
     margin-bottom: .5rem;
     transition: 0.3s ease-in-out;
+    font-family: "Roboto", sans-serif;
+    font-style: italic;
 }
 
 .li_ventajas:hover{

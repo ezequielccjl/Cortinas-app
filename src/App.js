@@ -8,6 +8,7 @@ import {Landing} from './components/Landing'
 import {WppButton} from './components/WppButton'
 import {Contacto} from './components/Contacto'
 import {Galeria} from './components/Galeria'
+import {Footer} from './components/Footer'
 
 //Productos
 import {ProductoContainer} from './components/ProductoContainer'
@@ -40,9 +41,9 @@ function App() {
           <ProductoContainer />
         </Route>
 
-        
 
       </Switch>
+        <Footer />
 
       </BrowserRouter>
     </div>
