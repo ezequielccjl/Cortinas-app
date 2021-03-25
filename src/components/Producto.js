@@ -19,7 +19,7 @@ export const Producto = ({item, animacion, dobles, cargarMedia}) => {
                     <ul className="ul_ventajas" >
                         {item.ventajas.map((ventaja)=>{
                             return(
-                                <li className="li_ventajas" key={item.ventajas.indexOf(ventaja)}>
+                                <li className="li_ventajas animate__animated animate__backInRight" key={item.ventajas.indexOf(ventaja)}>
                                     {ventaja}
                                 </li>
                             )

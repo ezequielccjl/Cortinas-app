@@ -17,7 +17,7 @@ export const Landing = () => {
     return (
         <div className="section-landing">
             <header className="landing-page">
-                <div className="cont-titulos">
+                <div className="cont-titulos animate__animated animate__backInDown">
                     <div className="cont-logo-titulo">
                         <Link to="/contacto">
                             <img className="img_logo" src={logo} alt="logo"></img>
@@ -30,18 +30,24 @@ export const Landing = () => {
             </header>
 
             <section className="section-ejemplos row">
-                <div className="item-landing col-xl-4 col-lg-4 col-xs-12">
-                    <img className="muestra_land" src={transparente} alt="transparente"></img>
+                <div className="item-landing col-xl-4 col-lg-4 col-xs-12 animate__animated animate__fadeIn">
+                    <Link to="/productos/sunscreen">
+                        <img className="muestra_land" src={transparente} alt="transparente"></img>
+                    </Link>
                     <div>SUNSCREEN</div>
                     <div>Transparente</div>
                 </div>
-                <div className="item-landing col-xl-4 col-lg-4 col-xs-12">
-                    <img className="muestra_land" src={translucida} alt="translucida"></img>
+                <div className="item-landing col-xl-4 col-lg-4 col-xs-12 animate__animated animate__fadeIn">
+                    <Link to="/productos/deco">
+                        <img className="muestra_land" src={translucida} alt="translucida"></img>
+                    </Link>
                     <div>DECO</div>
                     <div>Translucida</div>
                 </div>
-                <div className="item-landing col-xl-4 col-lg-4 col-xs-12">
-                    <img className="muestra_land" src={blackout} alt="blackout"></img>
+                <div className="item-landing col-xl-4 col-lg-4 col-xs-12 animate__animated animate__fadeIn">
+                    <Link to="/productos/blackout">
+                        <img className="muestra_land" src={blackout} alt="blackout"></img>
+                    </Link>
                     <div>BLACK OUT</div>
                     <div>Oscuridad Total</div>
                 </div>

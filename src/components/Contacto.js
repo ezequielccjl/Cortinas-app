@@ -10,7 +10,7 @@ export const Contacto = () => {
     return(
         <div className="cont_contacto">
             <div className="cont_tel">
-                <div className="titulo_sec_contacto">CONTACTO</div>
+                <div className="titulo_sec_contacto animate__animated animate__backInDown">CONTACTO</div>
                 <div className="desc_tel">
                     <div className="nuestro_servicio">
                         <div className="text-center">¿Quieres contratar nuestro servicio? </div>

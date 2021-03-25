@@ -57,9 +57,9 @@ export const Galeria = () => {
                 <img src={imgMostrar} alt="img-modal" className="img_modal"></img>
             </div>
             
-            <div className="header_galeria">
-                <div className="cont_header_g">
-                    <div className="titulo_galeria">NUESTRA GALERÍA</div>
+            <div className="header_galeria ">
+                <div className="cont_header_g ">
+                    <div className="titulo_galeria animate__animated animate__backInDown">NUESTRA GALERÍA</div>
                     <div className="subtitulo_galeria">Mirá nuestros productos acá!</div>
                     <div className="arrow bounce">
                         <i className="fa fa-arrow-down" ></i>
