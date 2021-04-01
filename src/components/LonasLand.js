@@ -1,6 +1,7 @@
 import React from 'react'
 import logo from '../icons/logo-cortinas.png'
 import '../CSS/lonasLand.css'
+import {Link} from 'react-router-dom'
 
 export const LonasLand = () => {
     return (
@@ -15,7 +16,9 @@ export const LonasLand = () => {
                 <img src={logo} alt="logo" className="logo_lonas"></img>
                 <div className="titulo_lonas">Contamos con amplio catálogo en telas de lona!</div>
                 <div className="cont_btn_lonas">
-                    <button className="btn_lonas">Consulta Aqui!</button>
+                    <Link to="/contacto">
+                        <button className="btn_lonas">Consulta Aqui!</button>
+                    </Link>
                 </div>
             </div>
         </section>

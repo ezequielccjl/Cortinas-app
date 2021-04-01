@@ -87,3 +87,36 @@
         background-image: url("../imgs/lonas-cover1.jpg");
     }
 }
+
+@media (max-width: 1100px){
+    .titulo_lonas{
+        font-size: 1.8rem;
+    }
+
+    .logo_lonas{
+        width: 8rem;
+    }
+
+    .btn_lonas{
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 950px){
+    .cont_lonas{
+        font-size: 2rem;
+        padding: 1rem;
+    }
+}
+
+@media (max-width: 500px){
+    .titulo_lonas{
+        width: 80%;
+    }
+
+    .btn_lonas{
+        padding: .5rem;
+        padding-right: 2rem;
+        padding-left: 2rem;
+    }
+}
