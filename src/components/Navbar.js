@@ -71,7 +71,7 @@ export const Navbar = () => {
     }
 
     function calculoHeight() {
-        console.log("SE EJECUTA EL CALCULO HEIGHT")
+        //console.log("SE EJECUTA EL CALCULO HEIGHT")
         if(nav !== null && landing !==null){
             navH = nav.clientHeight
             landingH = landing.clientHeight;
@@ -115,6 +115,11 @@ export const Navbar = () => {
                 </div>
                 <div className="nav-menu" >
                     <ul className="nav-ul">
+                        <li className="nav-link">
+                            <Link to="/">
+                                Inicio
+                            </Link>
+                        </li>
                         <li className="nav-link nav-link-catalogo">
                             Productos
                         </li>
@@ -136,6 +141,11 @@ export const Navbar = () => {
             </div>
             <div className="cont_menu_resp">
                 <ul className="ul_resp">
+                    <li className="op_resp" onClick={catalogoHandlerArrow}>
+                        <Link to="/">
+                            Inicio
+                        </Link>
+                    </li>
                     <li onClick={catalogoHandlerResp} className="op_resp op_resp_catalogo">
                         Productos
                     </li>
