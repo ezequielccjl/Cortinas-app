@@ -1,4 +1,4 @@
-import React, {useEffect} from 'react'
+import React from 'react'
 import {Link} from 'react-router-dom'
 
 import "../CSS/landing.css"
@@ -7,6 +7,8 @@ import "../CSS/landing.css"
 import translucida from '../imgProds/deco/deco.png'
 import transparente from '../imgProds/sunscreen/sunscreen.png'
 import blackout from '../imgProds/blackout/blackout.png'
+
+import {LonasLand} from './LonasLand'
 
 
 //Logo
@@ -52,6 +54,8 @@ export const Landing = () => {
                     <div>Oscuridad Total</div>
                 </div>
             </section>
+
+            <LonasLand />
         </div>
 
     )

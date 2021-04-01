@@ -1,0 +1,89 @@
+.titulo_section_lonas{
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-image: url("../imgs/lonas-title.jpg");
+
+    font-family: "Abril Fatface";
+    font-size: 3rem;
+    color: white;
+    text-align: center;
+    
+}
+
+.cont_lonas{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.2);
+    padding: 2rem;
+}
+
+.logo_lonas{
+    width: 13rem;
+}
+
+.cont_lonas_img{
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+
+    
+
+    animation-name: lona;
+    animation-direction: alternate-reverse;
+    animation-duration: 5s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+    animation-timing-function: ease-in-out;
+
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.titulo_lonas{
+    margin-top: 2rem;
+    color: white;
+    font-family: "Roboto";
+    text-align: center;
+    font-size: 3rem;
+    font-style: italic;
+    font-weight: 300;
+    width: 50%;
+}
+
+.cont_btn_lonas{
+    margin-top: 2rem;
+}
+
+.btn_lonas{
+    background: rgba(0, 0, 0, 0.3);
+    color: white;
+    font-family: "Roboto";
+    border: solid 1px white;
+    padding: 1rem;
+    padding-right: 3rem;
+    padding-left: 3rem;
+
+    font-size: 1.5rem;
+}
+
+@keyframes lona{
+    0%{
+        background-image: url("../imgs/lonas-cover1.jpg");
+    }
+    
+    50%{
+        background-image: url("../imgs/lonas-cover2.jpg");
+
+    }
+
+    100%{
+        background-image: url("../imgs/lonas-cover1.jpg");
+    }
+}
