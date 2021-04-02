@@ -20,6 +20,14 @@
     background-color: transparent;
 }
 
+.input_invalido{
+    border: rgba(255, 59, 59, 0.623) solid 2px !important;
+}
+
+.input_valido{
+    border: #5AC055 solid 2px !important;
+}
+
 .cont_btn_submit{
     display: flex;
     justify-content: flex-end;
@@ -43,4 +51,47 @@
 textarea{
     resize: none;
     height: 6rem;
+}
+
+.modal_form{
+    background-color: rgb(255, 255, 255);
+    position: fixed;
+    top: -20rem;
+    right: 50%;
+    transform: translate(50%,-50%);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    padding: 2rem;
+    border-radius: 1rem;
+
+    transition: .5s ease-in-out;
+}
+
+.gif{
+    width: 7rem;
+}
+
+.texto_modal{
+    font-family: "Roboto";
+    font-size: 1.5rem;
+    font-weight: 300;
+}
+
+.fa-times{
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    color: rgba(136, 136, 136, 0.5);
+}
+
+.fa-times:hover{
+    cursor: pointer;
+}
+
+.subir_advertencia{
+    top: 50%;
 }

@@ -1,7 +1,7 @@
 import React from 'react'
 import '../CSS/form.css'
 
-export const Form = ({enviarEmail}) => {
+export const Form = ({enviarEmail, validacion}) => {
     return(
         <form className="form" onSubmit={enviarEmail}>
                 
@@ -12,7 +12,9 @@ export const Form = ({enviarEmail}) => {
                     required 
                     placeholder="Ingrese su nombre"
                     type="text"
-                    autoComplete="off">
+                    autoComplete="off"
+                    onKeyUp={validacion}
+                    >
                 </input>
     
 
@@ -23,7 +25,8 @@ export const Form = ({enviarEmail}) => {
                     required 
                     placeholder="Ingrese su correo"
                     type="text"
-                    autoComplete="off">
+                    autoComplete="off"
+                    onKeyUp={validacion}>
                 </input>
 
 
@@ -33,8 +36,9 @@ export const Form = ({enviarEmail}) => {
                     className="un_input" 
                     required 
                     placeholder="Ingrese su telefono"
-                    type="text"
-                    autoComplete="off">
+                    type="number"
+                    autoComplete="off"
+                    onKeyUp={validacion}>
                 </input>
 
 
@@ -45,7 +49,8 @@ export const Form = ({enviarEmail}) => {
                     required
                     placeholder="Ingrese su consulta"
                     type="text"
-                    autoComplete="off">
+                    autoComplete="off"
+                    onKeyUp={validacion}>
                 </textarea>
             
 
