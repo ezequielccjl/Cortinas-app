@@ -25,13 +25,13 @@
 .cont_lonas_img{
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center center;
+    background-position: 80% center;
 
     
 
     animation-name: lona;
     animation-direction: alternate-reverse;
-    animation-duration: 5s;
+    animation-duration: 20s;
     animation-fill-mode: forwards;
     animation-iteration-count: infinite;
     animation-play-state: running;
@@ -55,6 +55,7 @@
     font-style: italic;
     font-weight: 300;
     width: 50%;
+    text-shadow: 0 0 5px #000000;
 }
 
 .cont_btn_lonas{
@@ -75,16 +76,27 @@
 
 @keyframes lona{
     0%{
-        background-image: url("../imgs/lonas-cover1.jpg");
+        background-image: url("../imgs/toldos/toldos5.jpg");
     }
     
+    25%{
+        background-image: url("../imgs/toldos/toldos4.jpg");
+
+    }
+
     50%{
-        background-image: url("../imgs/lonas-cover2.jpg");
+        background-image: url("../imgs/toldos/toldos3.jpg");
 
     }
 
     100%{
-        background-image: url("../imgs/lonas-cover1.jpg");
+        background-image: url("../imgs/toldos/toldos4.jpg");
+
+    }
+
+    100%{
+        background-image: url("../imgs/toldos/toldos5.jpg");
+
     }
 }
 
