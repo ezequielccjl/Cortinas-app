@@ -74,6 +74,40 @@
     font-size: 1.5rem;
 }
 
+.galeria_toldos{
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    background: linear-gradient(90deg, rgba(0,23,23,1) 0%, rgba(0,51,51,1) 50%, rgba(0,23,23,1) 100%);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.titulo_galeria_toldo{
+    color: white;
+    font-size: 2rem;
+    text-shadow: 0 0 5px #000000;
+    font-family: "Abril Fatface", serif;
+    margin-bottom: 1.5rem;
+}
+
+.cont_carousel{
+    padding-left: 2rem;
+    padding-right: 2rem;
+    width: 75%;
+}
+
+.cont_img_toldos{
+    height: 10rem;
+}
+
+.img_toldo{
+    width: 100%;
+    object-fit: cover;
+}
+
 @keyframes lona{
     0%{
         background-image: url("../imgs/toldos/toldos5.jpg");
@@ -122,6 +156,11 @@
 }
 
 @media (max-width: 500px){
+
+    .titulo_galeria_toldo{
+        font-size: 1.5rem;
+    }
+
     .titulo_lonas{
         width: 80%;
     }
@@ -131,4 +170,9 @@
         padding-right: 2rem;
         padding-left: 2rem;
     }
+
+    .cont_carousel{
+        width: 100%;
+    }
+
 }
