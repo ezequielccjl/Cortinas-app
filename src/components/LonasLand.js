@@ -25,7 +25,7 @@ export const LonasLand = () => {
             <div className="cont_lonas_img">
                 
                 <img src={logo} alt="logo" className="logo_lonas"></img>
-                <div className="titulo_lonas">Contamos con amplio catálogo en telas de lona!</div>
+                <div className="titulo_lonas">Contamos con amplio catálogo en toldos de lona!</div>
                 <div className="cont_btn_lonas">
                     <Link to="/contacto">
                         <button className="btn_lonas">Consulta Aqui!</button>
