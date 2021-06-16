@@ -110,7 +110,7 @@ export const Navbar = () => {
             <div className="navbar">
                 <div className="titulo-nav">
                     <Link to="/">
-                        CORTINAS . YA
+                        GRUPO ROLLERS
                     </Link>
                 </div>
                 <div className="nav-menu" >

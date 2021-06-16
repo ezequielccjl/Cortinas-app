@@ -24,7 +24,7 @@ export const Landing = () => {
                         <Link to="/contacto">
                             <img className="img_logo" src={logo} alt="logo"></img>
                         </Link>
-                        <div className="titulo-landing">CORTINAS . YA</div>
+                        <div className="titulo-landing">GRUPO ROLLERS</div>
 
                     </div>
                     <div className="subtitulo-landing">Fábrica de Cortinas y  Toldos de Lona.</div>
